@@ -1,0 +1,11 @@
+{
+  "id": "dev-mode-friendly",
+  "title": "Developer friendly",
+  "description": "Keeps the screen awake while connected to power and shows taps, handy while iterating on a TV app with an AI agent.",
+  "platforms": ["android"],
+  "risk": "safe",
+  "steps": [
+    {"setting": "global", "key": "stay_on_while_plugged_in", "value": "7"},
+    {"setting": "system", "key": "show_touches", "value": "1"}
+  ]
+}

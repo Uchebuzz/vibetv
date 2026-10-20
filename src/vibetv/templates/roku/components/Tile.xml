@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component name="Tile" extends="Group">
+    <interface>
+        <field id="itemContent" type="node" onChange="onContent" />
+        <field id="focusPercent" type="float" onChange="onFocus" />
+    </interface>
+    <script type="text/brightscript">
+    <![CDATA[
+    sub init()
+        m.bg = m.top.findNode("bg")
+        m.label = m.top.findNode("label")
+    end sub
+
+    sub onContent()
+        content = m.top.itemContent
+        m.label.text = content.title
+        if content.hasField("tileColor") then m.bg.color = content.tileColor
+    end sub
+
+    sub onFocus()
+        m.bg.opacity = 0.55 + 0.45 * m.top.focusPercent
+    end sub
+    ]]>
+    </script>
+    <children>
+        <Rectangle id="bg" width="320" height="180" color="0x151924FF" opacity="0.55" />
+        <Label id="label" translation="[20,124]" width="280" font="font:MediumBoldSystemFont" color="0xF4F6FBFF" />
+    </children>
+</component>

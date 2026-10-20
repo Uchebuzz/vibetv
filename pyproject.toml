@@ -1,0 +1,37 @@
+[project]
+name = "vibetv"
+version = "0.1.0"
+description = "Vibecode your TV: discover, scaffold, live-reload, deploy, screenshot and tweak Android TV, Google TV, Fire TV, Roku and LG webOS from your terminal or AI agent."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "Uchebuzz" }]
+keywords = ["android-tv", "google-tv", "fire-tv", "roku", "webos", "adb", "mcp", "vibecoding", "smart-tv"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Environment :: Console",
+  "Topic :: Multimedia :: Video",
+  "Topic :: Software Development :: Code Generators",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/Uchebuzz/vibetv"
+Issues = "https://github.com/Uchebuzz/vibetv/issues"
+
+[project.scripts]
+vibetv = "vibetv.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/vibetv"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

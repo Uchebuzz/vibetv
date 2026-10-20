@@ -1,0 +1,12 @@
+{
+  "id": "no-animations",
+  "title": "Instant UI",
+  "description": "Turns system animations off entirely. Fastest feel, but some apps look abrupt.",
+  "platforms": ["android"],
+  "risk": "safe",
+  "steps": [
+    {"setting": "global", "key": "window_animation_scale", "value": "0"},
+    {"setting": "global", "key": "transition_animation_scale", "value": "0"},
+    {"setting": "global", "key": "animator_duration_scale", "value": "0"}
+  ]
+}

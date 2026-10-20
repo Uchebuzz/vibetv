@@ -1,0 +1,10 @@
+{
+  "id": "quiet-android-tv-home",
+  "title": "Quieter Android TV home",
+  "description": "Disables the classic Android TV recommendations service that fills the home screen with suggested content. Reversible. Behaviour varies by firmware - check your home screen after applying.",
+  "platforms": ["android"],
+  "risk": "moderate",
+  "steps": [
+    {"package": "com.google.android.tvrecommendations", "enabled": false}
+  ]
+}

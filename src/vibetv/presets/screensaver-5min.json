@@ -1,0 +1,11 @@
+{
+  "id": "screensaver-5min",
+  "title": "Screensaver after 5 minutes",
+  "description": "Starts the screensaver after 5 minutes of inactivity. Pair with `vibetv screensaver set` to use your own vibecoded screensaver.",
+  "platforms": ["android"],
+  "risk": "safe",
+  "steps": [
+    {"setting": "secure", "key": "screensaver_enabled", "value": "1"},
+    {"setting": "system", "key": "screen_off_timeout", "value": "300000"}
+  ]
+}

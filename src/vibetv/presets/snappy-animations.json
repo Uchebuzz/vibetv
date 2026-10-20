@@ -1,0 +1,12 @@
+{
+  "id": "snappy-animations",
+  "title": "Snappier UI",
+  "description": "Halves window, transition and animator durations. The single most noticeable speed-up on slow TV boxes.",
+  "platforms": ["android"],
+  "risk": "safe",
+  "steps": [
+    {"setting": "global", "key": "window_animation_scale", "value": "0.5"},
+    {"setting": "global", "key": "transition_animation_scale", "value": "0.5"},
+    {"setting": "global", "key": "animator_duration_scale", "value": "0.5"}
+  ]
+}

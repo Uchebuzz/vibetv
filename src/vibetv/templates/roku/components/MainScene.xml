@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 1920x1080 (fhd). Keep content inside the 5% safe area: x 96..1824, y 54..1026. -->
+<component name="MainScene" extends="Scene">
+    <script type="text/brightscript" uri="pkg:/components/MainScene.brs" />
+    <children>
+        <Rectangle id="bg" width="1920" height="1080" color="0x0B0D12FF" />
+        <Label id="title" translation="[96,54]" font="font:LargeBoldSystemFont" color="0xF4F6FBFF" text="{{APP_NAME}}" />
+        <Label id="subtitle" translation="[96,120]" font="font:SmallSystemFont" color="0x9AA3B5FF" text="built with vibetv" />
+        <Label id="clock" translation="[1424,54]" width="400" horizAlign="right" font="font:LargeSystemFont" color="0xF4F6FBFF" />
+        <RowList
+            id="rows"
+            translation="[96,240]"
+            itemComponentName="Tile"
+            numRows="2"
+            itemSize="[1728,280]"
+            rowItemSize="[[320,180]]"
+            rowItemSpacing="[[32,0]]"
+            itemSpacing="[0,40]"
+            showRowLabel="[true]"
+            rowLabelColor="0x9AA3B5FF"
+            rowFocusAnimationStyle="floatingFocus" />
+        <Timer id="tick" repeat="true" duration="1" />
+    </children>
+</component>

@@ -1,0 +1,14 @@
+name: Feature / tweak idea
+description: Suggest a feature, template or tweak preset
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like vibetv to do?
+    validations:
+      required: true
+  - type: textarea
+    id: devices
+    attributes:
+      label: Which TVs would this apply to?
