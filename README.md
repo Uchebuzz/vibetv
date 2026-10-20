@@ -2,10 +2,10 @@
 
 # 📺 vibetv
 
-**Vibecode your TV.**
+**Vibecode your TV menu. Lose the ads.**
 
-Use your AI coding agent to build a custom home screen, screensaver, dashboard or app for your
-TV, and watch it update on the big screen every time you save.
+Swap your TV's ad-filled home screen for one you describe to your AI coding agent, and watch
+it update on the big screen every time you save.
 
 Android TV · Google TV · Fire TV · Roku · LG webOS
 
@@ -18,8 +18,18 @@ Android TV · Google TV · Fire TV · Roku · LG webOS
 
 ---
 
-Everyone is vibecoding. But point an AI agent at a TV and it's blind: it can't see the
-screen, can't press the remote, and doesn't know a D-pad from a mouse. **vibetv closes that loop.**
+Everyone is trying to vibecode their TV menu: rip out the sponsored rows and autoplaying
+promos, and build a home screen that shows just their apps, their way. The catch is that an AI
+agent pointed at a TV is blind. It can't see the screen, can't press the remote, and doesn't
+know a D-pad from a mouse. **vibetv closes that loop.**
+
+- **Build your own menu:** describe it, and your agent builds a home screen that lists and
+  launches your installed apps. Make it the TV's Home with one command, and undo it with another.
+- **Remove the ads:** a menu you wrote has no sponsored content. On Android TV, the reversible
+  `quiet-android-tv-home` tweak also turns off the stock recommendations feed.
+
+> vibetv changes your TV's menu, not other apps: ads inside YouTube, Netflix and other
+> streaming apps aren't touched.
 
 ```
  you: "make my home screen show my apps as big cards, with the weather and a clock"
