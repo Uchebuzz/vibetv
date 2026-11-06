@@ -203,3 +203,5 @@ PRs are very welcome, especially new **tweak presets** (just a JSON file), **tem
 ## License
 
 [MIT](LICENSE)
+
+[![M8ven Score](https://m8ven.ai/badge/mcp/uchebuzz-vibetv-1jz0ai?v=6d6c40d4ea909312b6e39e30f0669136)](https://m8ven.ai/mcp/uchebuzz-vibetv-1jz0ai?s=readme)
